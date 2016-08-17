@@ -1,5 +1,5 @@
-<library path="lib/rviz_plugin_camerarenderpublisher">
-  <class type="rviz_plugin_camerarenderpublisher::CameraRenderPublisher"
+<library path="lib/librviz_plugin_camerarenderpublisher">
+  <class type="rviz::CameraRenderPublisher"
          base_class_type="rviz::Display">
     <description>
       Publishes the rendered images on a camera plugin as ROS Image messages.
