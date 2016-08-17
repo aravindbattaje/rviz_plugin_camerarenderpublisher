@@ -246,6 +246,7 @@ void CameraRenderPublisher::onEnable()
 {
   subscribe();
   render_panel_->getRenderWindow()->setActive(true);
+  render_panel_->resize( 640, 480 );
 }
 
 void CameraRenderPublisher::onDisable()
@@ -339,6 +340,7 @@ void CameraRenderPublisher::clear()
 
 void CameraRenderPublisher::update( float wall_dt, float ros_dt )
 {
+    render_panel_->resize( 640, 480 );
   try
   {
     if( texture_.update() || force_render_ )
