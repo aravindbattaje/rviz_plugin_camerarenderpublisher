@@ -103,6 +103,7 @@ protected:
 private Q_SLOTS:
   void forceRender();
   void updateAlpha();
+  void updateOutputImgTopic();
 
   virtual void updateQueueSize();
 
@@ -135,6 +136,7 @@ private:
   EnumProperty* image_position_property_;
   FloatProperty* zoom_property_;
   DisplayGroupVisibilityProperty* visibility_property_;
+  StringProperty* output_img_topic_property_;
 
   sensor_msgs::CameraInfo::ConstPtr current_caminfo_;
   boost::mutex caminfo_mutex_;
